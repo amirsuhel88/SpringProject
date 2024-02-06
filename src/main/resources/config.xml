@@ -12,14 +12,16 @@ http://www.springframework.org/schema/context/spring-context.xsd">
     <!-- this is our beans -->
 
     <bean class="com.springcore.Student" name="student1">
-        <property name="studentId">
-            <value>22344 </value>
+        <property name="studentId" value ="1234">
+            <!-- <value>22344 </value> -->
         </property>
-        <property name="studentName">
-            <value>Amir </value>
+        <property name="studentName" value ="Suhel">
+            <!-- <value>Amir </value> -->
         </property>
-        <property name="studentAddress">
-            <value>Gauhati </value>
+        <property name="studentAddress" value="Azara">
+            <!-- <value>Gauhati </value> -->
         </property>
     </bean>
+    <bean class="com.springcore.Student" name="student2" p:studentId="321" p:studentName="Amir" p:studentAddress="barpeta"/>
+
 </beans>
